@@ -15,7 +15,7 @@ class AlterUsersTable02 extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->foreign('id_labo')->references('id_labo')->on('labo');
+            $table->foreign('id_labo')->references('id_labo')->on('labos');
         });
     }
 
